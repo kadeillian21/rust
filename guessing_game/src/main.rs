@@ -8,7 +8,7 @@ fn main() {
     println!("Guess the number!");
     println!("Pleas input your guess.");
 
-    let secret_number = rand::thread_rng().gen_range(1, 101);
+    let secret_number: u32 = rand::thread_rng().gen_range(1, 101);
     let mut guess = String::new();
 
     io::stdin()
