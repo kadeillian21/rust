@@ -74,4 +74,21 @@ fn main() {
     // remainder
     let remainder: u8 = 43 % 5;
     println!("Remainder is: {}", remainder);
+
+    // ! Yikes, Tuples
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, _y, _z) = tup;
+    println!("Tuple moment: {}", x);
+
+    // a bit of dot notation pattern matching
+    let a: (i32, f64, u8) = (500, 6.4, 1);
+    let five_hundred = a.0;
+    let _six_point_four = a.1;
+    let _one = a.2;
+    println!("Five Hundred: {}", five_hundred);
+
+    // ! Array and Vector moment
+    let array = [1, 2, 3, 4, 5];
+    let first = array[0];
+    println!("Array index 0: {}", first)
 }
