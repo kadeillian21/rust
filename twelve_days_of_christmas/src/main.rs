@@ -1,5 +1,5 @@
 fn tweleve_days_of_christmas() {
-    const CHRISTMAS_ITEMS: &[&str] = &[
+    let christmas_items: &[&str] = &[
         "a partridge in a pear tree.",
         "two turtle doves",
         "three French hens",
@@ -19,13 +19,13 @@ fn tweleve_days_of_christmas() {
         "tenth", "eleventh", "twelvth",
     ];
 
-    for number in PRIMIAL_NUMBERS {
+    for (i, number) in PRIMIAL_NUMBERS.iter().enumerate() {
         println!(
             "On the {} day of Christmas, my true love gave to me...",
             number
         );
-        for item in CHRISTMAS_ITEMS {
-            println!("{}", item);
+        for item in (0..=i).rev() {
+            println!("{}", christmas_items[item]);
         }
     }
 }
