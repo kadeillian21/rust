@@ -15,3 +15,5 @@ fn takes_ownership(some_string: String) {
 fn makes_copy(some_integer: i32) {
     println!("{}", some_integer);
 } // some_integer goes out of scope
+
+// return values and scope
